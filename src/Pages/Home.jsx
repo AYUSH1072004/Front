@@ -3,6 +3,8 @@ import hero_img from '../assets/hero.png'
 import collection1 from '../assets/collection-1.png'
 import collection2 from '../assets/collection-2.png'
 import collection3 from '../assets/collection-3.png'
+import p1 from '../assets/popular-1.png'
+import p2 from '../assets/popular-2.png'
 
 const Home = () => {
     return (
@@ -91,6 +93,70 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* home-popular  */}
+            <section id="popular">
+                <div className='container'>
+                    <div className='flex flex-col items-center gap-3 text-center mb-20 md:mb-28'>
+                        <h2 className='title text-titleColor'>Popular</h2>
+                        <p className='subtitle max-w-2xl'>Things you need to know</p>
+                    </div>
+
+                    <div className='flex flex-col md:flex-row items-center gap-5 lg:gap-10'>
+                        <div className='bg-cardColor w-full py-5 px-3 md:py-8 md:px-10 xl:py-10 xl:px-12 flex justify-between items-center
+                        md:w-1/2'>
+                            <div className='w-3/5'>
+                                <div className='max-w-56 xl:max-w-full'>
+                                    <p className='text-xs xl:text-base pb-2'>TOP STAFF PICK</p>
+                                    <p className='cardtitle2'>Best Collection</p>
+                                    <div className='my-3 md:my-5'>
+                                        Use code: LIGHTCODE Get <br />
+                                        25% Off for all items!
+                                    </div>
+                                    <button className='btn2 mt-5'>Shop now</button>
+                                </div>
+                            </div>
+
+                            <div className="w-2/5">
+                                <img src={p1} alt="" className='p-img' />
+                            </div>
+
+                        </div>
+
+                        <div className='bg-cardColor w-full py-5 px-3 md:py-8 md:px-10 xl:py-10 xl:px-12 flex justify-between items-center
+                        md:w-1/2'>
+                            <div className='w-3/5'>
+                                <div className='max-w-56 xl:max-w-full'>
+                                    <p className='text-xs xl:text-base pb-2'>TOP STAFF PICK</p>
+                                    <p className='cardtitle2'>Best Collection</p>
+                                    <div className='my-3 md:my-5'>
+                                        Use code: LIGHTCODE Get <br />
+                                        25% Off for all items!
+                                    </div>
+                                    <button className='btn2 mt-5'>Shop now</button>
+                                </div>
+                            </div>
+
+                            <div className="w-2/5">
+                                <img src={p2} alt="" className='p-img' />
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="bg-cardColor text-center mt-5 lg:mt-10 py-10 px-5 w-full" id='card3'>
+
+                        <div className='sm:max-w-72 mx-auto'>
+                            <p className='cardtitle2'>Collection Arrived</p>
+                            <p>You have no items & Are you ready to use? come & shop with us!</p>
+                            <p>Price from: <span class="text-2xl font-bold">$45.00</span></p>
+                            <button class="btn2 mt-10">Shop now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
         </>
     )
 }
