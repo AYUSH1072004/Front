@@ -29,10 +29,10 @@ const Navbar = () => {
             `}
           >
             <ul className='flex md:flex-row flex-col items-center gap-6' onClick={closeMenu}>
-              <li><NavLink to='/' className='nav-links active'>Home</NavLink></li>
-              <li><NavLink to='/product' className='nav-links'>Product's</NavLink></li>
-              <li><NavLink to='/mens' className='nav-links'>Men's</NavLink></li>
-              <li><NavLink to='/humans' className='nav-links'>Human's</NavLink></li>
+              <li><NavLink to='/home' className='nav-links active'>Home</NavLink></li>
+              <li><NavLink to='/product' className='nav-links'>Products</NavLink></li>
+              <li><NavLink to='/mens' className='nav-links'>Mens</NavLink></li>
+              <li><NavLink to='/womans' className='nav-links'>Womens</NavLink></li>
               <li><NavLink to='/signup' className='nav-links'>SignUp</NavLink></li>
               <li><NavLink to='/signin' className='nav-links'>SignIn</NavLink></li>
             </ul>

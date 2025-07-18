@@ -5,12 +5,13 @@ import collection2 from '../assets/collection-2.png'
 import collection3 from '../assets/collection-3.png'
 import p1 from '../assets/popular-1.png'
 import p2 from '../assets/popular-2.png'
+import about from '../assets/about.png'
 
 const Home = () => {
     return (
         <>
             {/* home-header  */}
-            <div id="hero" className='container relative mt-16 sm:mt-20 py-10 xl:min-h-screen'>
+            <div id="hero" name='/home' className='container relative mt-16 sm:mt-20 py-10 xl:min-h-screen'>
 
                 <div className='absolute top-[40%] sm:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 md:top-[45%] lg:top-1/2'>
 
@@ -156,7 +157,95 @@ const Home = () => {
                 </div>
             </section>
 
-            
+            {/* home-banner  */}
+            <section id="banner" className=' bg-cardColor'>
+                <div className='container'>
+                    <div className='flex flex-col lg:flex-row justify-between gap-10'>
+
+                        <div className='flex-1 flex gap-5 max-w-md'>
+                            <div className='text-5xl'>
+                                <i className='ri-plane-line'></i>
+                            </div>
+                            <div className='space-y-4'>
+                                <p className='uppercase font-bold'>EU Free Delivery</p>
+
+                                <p className='leading-relaxed'>Free Delivery on all order from EU
+                                    with price more than $90.00</p>
+                            </div>
+                        </div>
+
+                        <div className='flex-1 flex gap-5 max-w-md'>
+                            <div className='text-5xl'>
+                                <i className='ri-arrow-go-back-line'></i>
+                            </div>
+                            <div className='space-y-4'>
+                                <p className='uppercase font-bold'>Money Guarantee</p>
+
+                                <p className='leading-relaxed'>30 Days money back guarantee
+                                    no question asked!</p>
+                            </div>
+                        </div>
+
+                        <div className='flex-1 flex gap-5 max-w-md'>
+                            <div className='text-5xl'>
+                                <i className='ri-lock-2-line'></i>
+                            </div>
+                            <div className='space-y-4'>
+                                <p className='uppercase font-bold'>Online Support 24/7</p>
+
+                                <p className='leading-relaxed'>We're here to support to you.
+                                    Let's shopping now!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* {home-about} */}
+            <section id="about" className='bg-sectionColor'>
+                <div className='container'>
+                    <div className='flex flex-col items-center gap-3 text-center mb-20 md:mb-28'>
+                        <h2 className='title text-titleColor'>About Celestia</h2>
+                        <p className='subtitle max-w-2xl'>Things you need to know</p>
+                    </div>
+                    <div className='flex flex-col md:flex-row items-start xl:items-center gap-5 lg:gap-10 mt-20'>
+                        <div className='w-full md:w-1/2'>
+                            <img src={about} alt="" />
+                        </div>
+                        <div className='w-full md:w-1/2'>
+                            <div>
+                                <p className='text-xs xl:text-base'>TOP STAFF PICK</p>
+                                <p className='cardtitle2'>Best Collection</p>
+                                <p className='mt-3 md:mt-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus magnam, consequuntur atque, deserunt commodi eos et dolores totam repudiandae incidunt mollitia quis neque consectetur dolorum aut officiis blanditiis, maxime saepe.</p>
+                                <br />
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus magnam, consequuntur atque, deserunt commodi</p>
+                                <button className='btn2 mt-5 lg:mt-10'>Shop now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* footer  */}
+            <footer className="container py-10">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                    <div className="w-full md:w-1/2">
+                        <p className="cardtitle">Newsletter</p>
+                        <p>Sign up and get exclusive offers and promotions</p>
+                    </div>
+
+                    <div className="w-full md:w-1/2">
+                        <div className="flex flex-col md:flex-row gap-1 ">
+                            <input type="email" placeholder="Your email letter" className="w-full px-5 py-3 text-bodyColor outline-none
+                            " />
+                            <button className='btn2'>Submite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p className='text-center mt-10 opacity-50'>Copyright &copy; 2025 Code_With_Ayush. All rights reserved.</p>
+            </footer>
+
         </>
     )
 }
